@@ -1,0 +1,26 @@
+form {
+    width: 100%;
+}
+
+#dados-pessoais input {
+    margin: 2px;
+}
+
+#dados-profissionais p {
+ margin: 1px;
+}
+
+#cargo, #interesse {
+    margin-bottom: 20px;
+}
+
+#curriculo {
+    width: 90%;
+}
+
+button {
+    margin: 30px 1px;
+    border-radius: 0;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px gray;
+}

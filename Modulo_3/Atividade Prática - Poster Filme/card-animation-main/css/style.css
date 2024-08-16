@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Creepster";
+}
+
+/* body {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/img.jpg') no-repeat center fixed;
+    animation: zoomIn 8s;
+    background-size: contain;
+    background-color: black; 
+    animation-fill-mode: forwards;
+} */
+
+
+@keyframes zoomInBackground {
+    0% {
+        transform: scale(1) translate(0, 0);
+        transform-origin: bottom right;
+    }
+    100% {
+        transform: scale(1.2) translate(4%, 9%);
+        transform-origin: bottom right;
+    }
+}
+
+
+body {
+    position: relative;
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    background-color: black; 
+    margin: 0;
+    overflow: hidden;
+    color: white;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/img.jpg') no-repeat center fixed;
+    background-size: cover;
+    animation: zoomInBackground 8s forwards;
+    z-index: -1;
+}
+
+
+.data{ 
+    display: inline-block;
+    font-size: 50px;
+    color: white;
+    animation-duration: 3s;
+    animation-name: data-lancamento;
+    margin: 20px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes data-lancamento {
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 2%;
+        width: 300%;
+    }
+}
+
+.titulo {
+    animation-name: titulo-lancamento;
+    animation-duration: 3s;
+    width: 40%;
+    background-color: transparent;
+    animation-fill-mode: forwards;
+    margin: 40px;
+}
+
+@keyframes titulo-lancamento {
+    from{
+        margin-top: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-top: 10%;
+        width: 300%;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+    background-size: 100%;
+    }
+    
+    to {
+    background-size: 110%;
+    }
+}
+
+

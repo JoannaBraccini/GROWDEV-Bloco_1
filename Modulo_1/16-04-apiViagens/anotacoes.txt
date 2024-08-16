@@ -1,0 +1,58 @@
+npm init -y
+
+npm i -D nodemon sucrase
+node_modules
+
+criar file .gitignore
+    node_modules
+
+criar file nodemon.json
+    {
+        "execMap": {
+            "js": "node -r sucrase/register"
+        }
+    }
+
+criar folder src
+    file index.js
+
+criar script no package.json
+    "dev": "nodemon src/index.js"
+npm run dev (para testar)
+
+npm i express cors
+
+no file index.js:
+    import express from 'express';
+    import cors from 'cors';
+    const app = express();
+    app.use(cors())
+    app.use(express.json());
+    app.listen(8080, () => console.log("Servidor rodando na porta 8080"))
+-----------
+app.METODO('endereço',(request, response)=>{
+})
+
+resposta -> status code | mensagem
+------------
+Endpoint
+POST -> CRIAR
+
+app.post('/produto',(request, response)=>{
+    //Pega o parâmetro
+    const nomeProduto = request.body.nomeProduto
+    const precoProduto = request.body.precoProduto
+    const qtdProduto = request.body.qtdProduto
+
+    //validação
+    if etc
+
+    //resposta
+    response.status(200).send(JSON.stringify({Mensagem: Requisição enviada!}))
+})
+
+---------
+Body -> corpo da Requisição -> req.body.nomeParametro
+path -> Caminho path params -> req.path.nomeParametro
+Query -> query params
+Header -> header

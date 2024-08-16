@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif !important;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primary: #E36659;
+    --secondary: #E3A4B5;
+}
+
+#profile-img {
+    border-color: var(--secondary) !important;
+    width: 9rem;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-font-size: 23px;
+    --bs-btn-color: #f2f2f2;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: var(--secondary);
+    --bs-btn-focus-shadow-rgb: var(--secondary);
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+}
+
+.btn-bd-primary:hover {
+    font-weight: 700 !important;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.special-text {
+    color: var(--primary);
+}
+
+#email {
+    color: var(--primary);
+    transition: all 0.2s;
+}
+
+#email:hover {
+    color: var(--secondary);
+}
+
+.socialLinks{
+    font-size: 40px;
+}
+
+.socialLinks a {
+    color: #525050;
+    transition: all 0.2s;
+}
+
+.socialLinks a:hover {
+    color: var(--primary);
+}
